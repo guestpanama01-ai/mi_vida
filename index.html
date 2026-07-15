@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Para la Chica Más Hermosa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============ 3D UNIVERSE BACKGROUND ============ -->
+  <div class="universe-bg">
+    <div class="stars stars-small"></div>
+    <div class="stars stars-medium"></div>
+    <div class="stars stars-large"></div>
+    <div class="aurora-blob aurora-1"></div>
+    <div class="aurora-blob aurora-2"></div>
+    <div class="aurora-blob aurora-3"></div>
+  </div>
+  <div class="grain"></div>
+
+  <!-- App-like Floating Nav -->
+  <nav class="floating-nav">
+    <a href="#hero">Inicio</a>
+    <a href="#gallery">Recuerdos</a>
+    <a href="#letter">Carta</a>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="eyebrow hero-eyebrow">NUESTRO MUNDO</div>
+      <h1 class="hero-title font-display">Tú y Yo</h1>
+      <p class="hero-sub">Un espacio diseñado exclusivamente para guardar lo mejor de nosotros. Desliza y descubre.</p>
+
+      <div class="hero-frame glass">
+        <img src="img/4.jpg" alt="Nosotros" class="main-photo">
+      </div>
+
+      <div class="scroll-cue">
+        <span>Explorar</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA MASONRY PREMIUM ============ -->
+    <section id="gallery">
+      <div class="section-head reveal">
+        <div class="eyebrow">COLECCIÓN INFINITA</div>
+        <h2 class="section-title font-display">Nuestra Historia</h2>
+        <p class="section-sub">Toda nuestra historia reunida en un solo lugar. Cada cuadro de cristal guarda un momento
+          que vale la pena recordar.</p>
+      </div>
+
+      <!-- Contenedor dinámico inyectado por script.js -->
+      <div class="masonry-gallery" id="masonry-gallery"></div>
+    </section>
+
+    <!-- ============ CALENDARIO JULIO ============ -->
+    <section id="calendar" class="calendar-wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">UN MES ESPECIAL</div>
+        <h2 class="section-title font-display">Julio</h2>
+        <p class="section-sub">Nuestra semana especial</p>
+      </div>
+
+      <div class="calendar-card glass reveal">
+        <div class="calendar-grid">
+          <div class="day-header">L</div>
+          <div class="day-header">M</div>
+          <div class="day-header">M</div>
+          <div class="day-header">J</div>
+          <div class="day-header">V</div>
+          <div class="day-header">S</div>
+          <div class="day-header">D</div>
+
+          <!-- Días vacíos de julio (empieza en miércoles) -->
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+
+          <div class="day">1</div>
+          <div class="day">2</div>
+          <div class="day">3</div>
+          <div class="day">4</div>
+          <div class="day">5</div>
+          <div class="day">6</div>
+          <div class="day">7</div>
+          <div class="day">8</div>
+          <div class="day">9</div>
+          <div class="day">10</div>
+          <div class="day">11</div>
+          <div class="day">12</div>
+
+          <div class="day highlight">13</div>
+          <div class="day highlight">14</div>
+          <div class="day highlight">15</div>
+
+          <div class="day heart-day">
+            <svg class="heart-bg" viewBox="0 0 32 29.6">
+              <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+              c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+            </svg>
+            <span>16</span>
+          </div>
+
+          <div class="day">17</div>
+          <div class="day">18</div>
+          <div class="day">19</div>
+          <div class="day">20</div>
+          <div class="day">21</div>
+          <div class="day">22</div>
+          <div class="day">23</div>
+          <div class="day">24</div>
+          <div class="day">25</div>
+          <div class="day">26</div>
+          <div class="day">27</div>
+          <div class="day">28</div>
+          <div class="day">29</div>
+          <div class="day">30</div>
+          <div class="day">31</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CARTA ============ -->
+    <section id="letter" class="letter-wrap">
+      <div class="letter-card glass reveal">
+        <span class="letter-mark">"</span>
+        <p class="letter-body">
+          Hola mi vida as llegado hasta el final de nuestro pequeño recorrido de fotos, con esta demostracion te quize
+          demostrar un poco de nuestro trayecto atravez de mi hobbie favorito
+          espero te haya parecido bonito, se que al final esto lo puedess ver en tu galeria pero quise demostrartelo de
+          otra manera mi princesa
+          ya con esto me despido espero te haya gustado el pequeño detalle que quice regalarte bebe
+        </p>
+        <p class="letter-signoff">te amo con toda mi alma</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>Hecho solo para ti mi princesa preciosa.</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
